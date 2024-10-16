@@ -8,15 +8,16 @@
   };
 
   outputs =
-    inputs@{ nixpkgs, ... }:
+    { nixpkgs, flux, ... }:
     {
+      nixpkgs.overlays = [ flux.overlays.default ];
+
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
-      nixpkgs.overlays = [ inputs.flux.overlays.default ];
       nixosConfigurations = {
         minecraft = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./configuration.nix
+            ./system/configuration.nix
 
             {
               flux = {
@@ -35,9 +36,8 @@
                 };
               };
             }
-            inputs.flux.nixosModules.default
+            flux.nixosModules.default
           ];
-          specialArgs = inputs;
         };
       };
     };
