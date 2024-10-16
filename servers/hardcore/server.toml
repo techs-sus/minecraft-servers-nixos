@@ -1,0 +1,21 @@
+name = "hardcore-minecraft"
+mc_version = "1.21.1"
+
+[jar]
+type = "fabric"
+loader = "latest"
+installer = "latest"
+
+[variables]
+PORT = "25565"
+
+[launcher]
+eula_args = true
+nogui = true
+
+[options]
+upload_to_mclogs = true
+
+[variables]
+PORT = "25565"
+MOTD = "hardcore - whitelisted - hosted on a chromebook"

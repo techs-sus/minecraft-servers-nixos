@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "flux": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1723660086,
+        "narHash": "sha256-fthMjFVXDy/a1OY+6TAPvDCT4FFjtBppNOks79Wd46E=",
+        "owner": "IogaMaster",
+        "repo": "flux",
+        "rev": "88b79998e985c96773f07b2f4e830506675661e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "IogaMaster",
+        "repo": "flux",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1712608508,
+        "narHash": "sha256-vMZ5603yU0wxgyQeHJryOI+O61yrX2AHwY6LOFyV1gM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "4cba8b53da471aea2ab2b0c1f30a81e7c451f4b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1729110433,
+        "narHash": "sha256-6Ah6Az1IziXVq9NwUviMbygASgEMVCMX1zLF9e6tAXo=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "e59e47ab1823dc17cdb2d7e6ff81c62213bc1826",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "release-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flux": "flux",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
